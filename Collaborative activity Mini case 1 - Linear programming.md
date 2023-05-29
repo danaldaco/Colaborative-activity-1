@@ -48,17 +48,17 @@ Instituto Tecnológico de Estudios Superiores de Monterrey
 
 ![](Aspose.Words.8ea5096f-1a37-4285-b669-9f4b9aab6754.002.png)
 
-1. **Is it mandatory to name the prob variable as prob?**
+2. **Is it mandatory to name the prob variable as prob?**
 
 No, this name can be changed to any other valid name according to Python naming variable  rules.
 
-1. **What are LpContinous and LpInteger used for?**
+3. **What are LpContinous and LpInteger used for?**
 
 Firstly, **LpContinuous** is used to define variables that can take any real value in a specific range (Continuous data type).  **LpInteger** is used to define variables that can **only** take integer values (Discrete data type). 
 
 The choice of variable type depends on the nature of the problem and the specific constraints to be modeled. In the case of this problem, we are using **LpInteger** to define the Chicken percent. ![](Aspose.Words.8ea5096f-1a37-4285-b669-9f4b9aab6754.003.png)
 
-1. **Explain and copy the section of code that defines the objective function.**
+4. **Explain and copy the section of code that defines the objective function.**
 
 The function prob is defined as a variable that contains the problem’s data. Variable “x1” corresponds to the percentage of chicken that the can of whiskas contains. Variable “x2” corresponds to the percentage of beef that the can of whiskas contains.
 
@@ -70,7 +70,7 @@ prob += 0.013 \* x1 + 0.008 \* x2, "Total Cost of Ingredients per can"
 
 
 
-1. **Explain and copy the section of code that defines the constraints**
+5. **Explain and copy the section of code that defines the constraints**
 
 In linear programming. constraints are conditions that must be satisfied when optimizing the objective function. They limit the values that the decision variables can take, thereby shaping the feasible solutions. In linear programming constraints are represented as linear inequalities or equalities. 
 
@@ -91,11 +91,11 @@ prob += 0.001 \* x1 + 0.005 \* x2 <= 2.0, "FibreRequirement"
 prob += 0.002 \* x1 + 0.005 \* x2 <= 0.4, "SaltRequirement"
 
 
-1. **Is this a minimization or maximization problem?**
+6. **Is this a minimization or maximization problem?**
 
 This is a minimization problem given the fact that Uncle Ben’s is looking to produce their cat food products as cheaply as possible while ensuring they meet the stated nutritional analysis requirements shown on the cans.
 
-1. **Run the WhiskasModel1.py code. (no need to make changes, just run it as is) What is the value of the following variables? Status: BeefPercent = ChickenPercent = Total Cost of Ingredients per can =**
+7. **Run the WhiskasModel1.py code. (no need to make changes, just run it as is) What is the value of the following variables? Status: BeefPercent = ChickenPercent = Total Cost of Ingredients per can =**
 
 The execution of this file shows that chicken represents 33.33%, beef 66.67% and the total cost of ingredients per can is 97 cents.![](Aspose.Words.8ea5096f-1a37-4285-b669-9f4b9aab6754.004.png)
 
